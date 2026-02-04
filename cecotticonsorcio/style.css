@@ -1,0 +1,611 @@
+/* =========================================
+   VARIÁVEIS GLOBAIS E RESET
+   ========================================= */
+:root {
+  --cor-primaria: #004d4d; /* Verde Escuro Institucional */
+  --cor-secundaria: #ff8c00; /* Laranja Institucional */
+  --cecotti-green: #00a859; /* Verde do Comparativo */
+  --cecotti-orange: #ff6600; /* Laranja Vibrante */
+  --cor-clara: #f8f9fa;
+  --cor-texto: #333;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--cor-texto);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o rodapé vá para baixo */
+}
+
+/* =========================================
+   CLASSES UTILITÁRIAS E BOTÕES
+   ========================================= */
+.bg-cecotti-green {
+  background-color: var(--cor-primaria);
+  color: white;
+}
+.text-cecotti-orange {
+  color: var(--cor-secundaria);
+}
+.bg-custom-green {
+  background-color: var(--cecotti-green);
+}
+
+/* Botão Padrão */
+.btn-cecotti {
+  background-color: var(--cor-secundaria);
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.btn-cecotti:hover {
+  background-color: #e07b00;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão Laranja (Comparativo) */
+.btn-custom-orange {
+  background-color: var(--cecotti-orange);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.btn-custom-orange:hover {
+  background-color: #e65c00;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Títulos Sublinhados */
+.section-title-underline {
+  width: 60px;
+  height: 4px;
+  background-color: var(--cor-secundaria);
+  margin: 10px auto 30px auto;
+  border-radius: 2px;
+}
+
+/* =========================================
+   NAVBAR (MENU)
+   ========================================= */
+.navbar {
+  background-color: var(--cor-primaria);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--cor-secundaria) !important;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: white !important;
+  margin-left: 15px;
+}
+
+.nav-link:hover {
+  color: var(--cor-secundaria) !important;
+}
+
+/* =========================================
+   HERO SECTION (HOME)
+   ========================================= */
+
+.hero {
+  /*
+       Atualizei a imagem de fundo e ajustei o gradiente (película escura)
+       para garantir que o texto branco fique sempre legível.
+    */
+  background:
+    linear-gradient(rgba(0, 50, 50, 0.9), rgba(0, 50, 50, 0.85)),
+    url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80");
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0; /* Aumentei um pouco o espaço interno */
+  color: white;
+}
+
+/* =========================================
+   SEÇÃO COMPARATIVO (TABELA)
+   ========================================= */
+.comparativo-box {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #dee2e6;
+}
+
+.rounded-top-left {
+  border-top-left-radius: 10px;
+}
+.rounded-top-right {
+  border-top-right-radius: 10px;
+}
+
+.bg-secondary-custom {
+  background-color: #e9ecef !important;
+  color: #6c757d !important;
+}
+
+.bi-x-circle-fill,
+.bi-check-circle-fill {
+  font-size: 1.2rem;
+}
+
+/* ===========================================================
+   ESTILO DOS CARDS: FOCO NA IMAGEM (Efeito Reveal)
+=========================================================== */
+
+.service-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+
+  /* Configurações da Imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Tamanho e Layout */
+  min-height: 320px; /* Um pouco mais alto para valorizar a foto */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  transition: all 0.4s ease-in-out;
+  z-index: 1;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra leve inicial */
+  cursor: pointer;
+}
+
+/* --- A MÁSCARA ESCURA (Overlay) --- */
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  /* ESTADO INICIAL: Máscara quase invisível para ver bem a foto */
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in-out;
+}
+
+/* --- ESTADO INICIAL DOS TEXTOS (Ocultos) --- */
+.service-card h4,
+.service-card p {
+  color: white;
+  opacity: 0; /* Invisível */
+  transform: translateY(30px); /* Empurrado para baixo */
+  transition: all 0.4s ease-in-out;
+}
+
+.service-card h4 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  padding: 0 10px;
+}
+
+/* --- O ÍCONE (Sempre visível, mas muda de posição) --- */
+.service-card .icon-box {
+  font-size: 3.5rem; /* Ícone grande inicialmente */
+  color: white; /* Branco para destacar na foto */
+  margin-bottom: 0;
+  transform: translateY(20px); /* Centralizado */
+  transition: all 0.4s ease-in-out;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para garantir leitura na foto clara */
+}
+
+/* ===========================================================
+   A MÁGICA ACONTECE AQUI: AO PASSAR O MOUSE (:HOVER)
+=========================================================== */
+
+/* 1. Card sobe e ganha sombra forte */
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* 2. O fundo escurece (gradiente com verde da marca) para dar leitura ao texto */
+.service-card:hover::before {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 77, 77, 0.95)
+  );
+}
+
+/* 3. O ícone diminui, fica laranja e sobe */
+.service-card:hover .icon-box {
+  font-size: 2.5rem;
+  color: var(--cecotti-orange);
+  transform: translateY(0);
+  margin-bottom: 15px;
+}
+
+/* 4. O título e o texto aparecem e sobem para o lugar certo */
+.service-card:hover h4,
+.service-card:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Pequeno atraso no texto para efeito cascata */
+.service-card:hover p {
+  transition-delay: 0.1s;
+}
+
+/* =========================================
+   SIMULADOR
+   ========================================= */
+.simulacao-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid var(--cor-secundaria);
+}
+
+.result-box {
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: none; /* Escondido por padrão */
+}
+
+/* =========================================
+   FAQ / ACCORDION
+   ========================================= */
+.faq-section {
+  background-color: #f9f9f9;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.accordion-button {
+  font-weight: 600;
+  color: var(--cor-primaria);
+  background-color: white;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--cor-secundaria);
+  background-color: white;
+}
+
+/* =========================================
+   PÁGINA SOBRE (HISTÓRIA)
+   ========================================= */
+.page-header {
+  background-color: var(--cor-primaria);
+  padding: 60px 0;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.value-card {
+  padding: 30px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  height: 100%;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.value-card:hover {
+  border-color: var(--cor-secundaria);
+  transform: translateY(-5px);
+}
+
+/* =========================================
+   RODAPÉ E WHATSAPP
+   ========================================= */
+footer {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 40px 0;
+  margin-top: auto; /* Empurra o footer para o final se o conteúdo for curto */
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--cor-secundaria);
+}
+
+.float-wa {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.float-wa:hover {
+  background-color: #128c7e;
+  color: white;
+}
+
+/* --- BOTÃO ESPECIAL DO WHATSAPP NO CARD --- */
+.btn-whatsapp-card {
+  background-color: #25d366;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-whatsapp-card:hover {
+  background-color: #128c7e;
+  color: white;
+  transform: scale(1.02); /* Cresce um pouquinho */
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4) !important;
+}
+
+/* --- EFEITO DE PISCAR (Online) --- */
+.blink {
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* --- CORREÇÃO DO COMPARATIVO (Evitar sobreposição) --- */
+
+/* Cria um container flexível para o texto e o ícone */
+.comparativo-item {
+  display: flex;
+  justify-content: space-between; /* Texto na esquerda, ícone na direita */
+  align-items: center; /* Centraliza verticalmente */
+  width: 100%;
+}
+
+/* Garante um pequeno espaço entre o texto e o ícone */
+.comparativo-item span {
+  padding-right: 15px;
+  flex-grow: 1; /* O texto ocupa o espaço disponível */
+}
+
+/* Ajuste fino para os ícones */
+.comparativo-item i {
+  flex-shrink: 0; /* Garante que o ícone não seja "esmagado" */
+  font-size: 1.3rem; /* Um pouco maior para destaque */
+}
+
+/* Remove as bordas laterais da tabela em telas pequenas para ganhar espaço */
+@media (max-width: 576px) {
+  .comparativo-body {
+    padding: 1rem 0.5rem !important;
+  }
+}
+
+/* --- ESTILO CARROSSEL DE PARCEIROS --- */
+
+/* O Container que rola */
+.parceiro-scroll-container {
+  display: flex;
+  overflow-x: auto; /* Permite rolar para o lado */
+  gap: 25px;
+  padding: 20px 5px; /* Espaço para a sombra não cortar */
+
+  /* Esconde a barra de rolagem feia */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE */
+}
+.parceiro-scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* O Card Individual */
+.parceiro-card {
+  min-width: 300px; /* Largura fixa do card */
+  max-width: 300px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  flex-shrink: 0; /* Impede o card de encolher */
+}
+
+.parceiro-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.parceiro-card .card-img-top {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Botões de Navegação (Setinhas) */
+.scroll-btn {
+  position: absolute;
+  top: 55%; /* Centralizado na altura dos cards */
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  color: var(--cor-primaria);
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-btn:hover {
+  background: var(--cecotti-orange);
+  color: white;
+}
+
+.prev-btn {
+  left: 0;
+}
+.next-btn {
+  right: 0;
+}
+
+/* Esconde os botões no celular (pois dá para arrastar com o dedo) */
+@media (max-width: 768px) {
+  .scroll-btn {
+    display: none;
+  }
+}
+
+/* --- CORREÇÃO DO MENU LATERAL --- */
+/* Força a cor escura nos links, mesmo com navbar-dark ativado */
+.offcanvas-body .nav-link {
+  color: #333 !important; /* Cinza escuro quase preto */
+  font-weight: 600; /* Um pouco mais negrito */
+  padding: 10px 0; /* Mais espaço para o dedo no celular */
+  transition: color 0.3s;
+}
+
+/* Cor laranja ao passar o mouse */
+.offcanvas-body .nav-link:hover {
+  color: var(--cecotti-orange) !important;
+  padding-left: 10px; /* Efeito visual de mover para o lado */
+}
+
+/* --- ESTILO FAQ PERSONALIZADO --- */
+
+.custom-accordion .accordion-button {
+  color: var(--cor-primaria); /* Texto Verde escuro quando fechado */
+  background-color: white;
+  box-shadow: none; /* Tira a borda azul padrão */
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+  color: white; /* Texto Branco quando aberto */
+  background-color: var(--cor-primaria); /* Fundo Verde quando aberto */
+  box-shadow: none;
+}
+
+/* Muda a cor da setinha (chevron) */
+.custom-accordion .accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1); /* Deixa a seta branca no fundo verde */
+}
+
+.custom-accordion .accordion-button:focus {
+  border-color: var(--cecotti-orange); /* Borda laranja ao clicar */
+  box-shadow: 0 0 0 0.25rem rgba(255, 102, 0, 0.25); /* Sombra laranja suave */
+}
+
+/* --- ESTILO FAQ SIDEBAR --- */
+
+/* Ajuste do scroll para não esconder o título atrás do menu fixo */
+.scroll-margin {
+  scroll-margin-top: 120px;
+}
+
+/* Menu Lateral (Sidebar) */
+.custom-sidebar .list-group-item {
+  border: none;
+  border-bottom: 1px solid #eee; /* Linha fininha entre os itens */
+  color: #666;
+  font-weight: 500;
+  padding: 15px 20px;
+  transition: all 0.2s;
+}
+
+/* Quando passa o mouse */
+.custom-sidebar .list-group-item:hover {
+  background-color: #f8f9fa;
+  color: var(--cor-primaria);
+  padding-left: 25px; /* Efeito de mover para o lado */
+}
+
+/* Quando o item está ATIVO (selecionado) */
+.custom-sidebar .list-group-item.active {
+  background-color: transparent;
+  color: var(--cecotti-orange); /* Texto laranja */
+  font-weight: bold;
+  border-left: 4px solid var(--cecotti-orange); /* Barrinha laranja na esquerda */
+  border-bottom: 1px solid #eee;
+}
+
+/* --- CORREÇÃO MOBILE: CARDS DE SERVIÇOS --- */
+/* Aplica essas regras apenas em telas menores que 992px (Tablets e Celulares) */
+@media (max-width: 992px) {
+  /* 1. Força o conteúdo (texto e botões) a aparecer sempre */
+  #servicos .card-body,
+  #servicos p,
+  #servicos .btn,
+  .card-servico p,
+  .card-servico .btn {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+    height: auto !important;
+  }
+
+  /* 2. Se o card tiver um fundo escuro que só aparece no mouse, força ele a aparecer */
+  #servicos .card::before,
+  .card-servico::before {
+    opacity: 0.8 !important; /* Ajuste a transparência se ficar muito escuro */
+  }
+
+  /* 3. Tira a animação de "pulo" do card para economizar espaço no celular */
+  #servicos .card,
+  .card-servico {
+    transform: none !important;
+    margin-bottom: 20px; /* Garante espaço entre um card e outro */
+  }
+}

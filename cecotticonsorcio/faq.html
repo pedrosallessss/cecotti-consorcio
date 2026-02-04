@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dúvidas Frequentes - Cecotti Consórcio</title>
+
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/609/609803.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=3">
+    <meta name="description"
+        content="Cecotti Consórcio - Agente autorizado Canopus. Simule e contrate consórcios de imóveis, carros e serviços com as melhores taxas.">
+</head>
+
+<body class="bg-light" data-bs-spy="scroll" data-bs-target="#menuFaq" data-bs-offset="100" tabindex="0">
+
+    <nav class="navbar navbar-dark sticky-top shadow-sm"
+        style="background-color: var(--cor-primaria); padding: 15px 0;">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4 text-white" href="index.html">
+                <i class="fa-solid fa-house-chimney text-cecotti-orange"></i>
+                <span class="text-cecotti-orange">Cecotti</span> Consórcio
+            </a>
+            <div class="d-flex align-items-center">
+                <a href="index.html#parceiro"
+                    class="btn btn-cecotti me-3 d-none d-sm-block fw-bold shadow-sm border-white">
+                    Seja um Parceiro
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#menuLateral">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="menuLateral">
+                <div class="offcanvas-header" style="background-color: var(--cor-primaria);">
+                    <h5 class="offcanvas-title fw-bold text-white">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column justify-content-between">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item border-bottom"><a class="nav-link fs-5" href="sobre.html">A Empresa</a></li>
+                        <li class="nav-item border-bottom"><a class="nav-link fs-5"
+                                href="index.html#servicos">Consórcios</a></li>
+                        <li class="nav-item border-bottom"><a class="nav-link fs-5"
+                                href="index.html#simulador">Simular</a></li>
+                        <li class="nav-item border-bottom"><a class="nav-link fs-5 active" href="faq.html"
+                                style="color: var(--cecotti-orange) !important;">Dúvidas Frequentes</a></li>
+                        <li class="nav-item border-bottom"><a class="nav-link fs-5"
+                                href="index.html#contato">Contato</a></li>
+                        <li class="nav-item mt-4 d-sm-none"><a class="btn btn-cecotti w-100"
+                                href="index.html#parceiro">Seja um Parceiro</a></li>
+                    </ul>
+                    <div class="mt-4 pt-2 text-center">
+                        <p class="text-muted small mb-2">Precisa de ajuda?</p>
+                        <a href="https://wa.me/5517991363607" class="btn btn-outline-success w-100 fw-bold"><i
+                                class="fab fa-whatsapp me-2"></i> Falar no WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 text-center text-white" style="background-color: var(--cor-primaria);">
+        <div class="container">
+            <h1 class="fw-bold">Central de Ajuda</h1>
+            <p class="lead opacity-75">Tire suas dúvidas sobre o funcionamento do consórcio</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="sticky-top" style="top: 100px; z-index: 1;">
+                        <h5 class="fw-bold mb-3 px-3" style="color: var(--cor-primaria);">Categorias</h5>
+                        <div id="menuFaq" class="list-group list-group-flush custom-sidebar">
+                            <a class="list-group-item list-group-item-action active" href="#freq">Perguntas
+                                Frequentes</a>
+                            <a class="list-group-item list-group-item-action" href="#assembleia">Assembleia e
+                                Contemplação</a>
+                            <a class="list-group-item list-group-item-action" href="#infos">Informações Gerais</a>
+                            <a class="list-group-item list-group-item-action" href="#parcelas">Parcelas</a>
+                            <a class="list-group-item list-group-item-action" href="#vantagens">Vantagens de
+                                Aquisição</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8 col-lg-9">
+
+                    <div id="freq" class="mb-5 scroll-margin">
+                        <h3 class="fw-bold mb-3 border-bottom pb-2" style="color: var(--cecotti-orange);">Perguntas
+                            Frequentes</h3>
+                        <div class="accordion custom-accordion" id="accFreq">
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#pq1">
+                                        O que é fundo comum?
+                                    </button>
+                                </h2>
+                                <div id="pq1" class="accordion-collapse collapse show" data-bs-parent="#accFreq">
+                                    <div class="accordion-body text-muted">
+                                        São os recursos do grupo destinados à atribuição de crédito aos consorciados
+                                        contemplados para aquisição do bem e à restituição dos valores a que têm direito
+                                        os consorciados excluídos dos respectivos grupos.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#pq2">
+                                        O que é grupo de consórcio?
+                                    </button>
+                                </h2>
+                                <div id="pq2" class="accordion-collapse collapse" data-bs-parent="#accFreq">
+                                    <div class="accordion-body text-muted">
+                                        Grupo de consórcio é a união de participantes com o objetivo de possibilitar a
+                                        cada um, através da contribuição de todos, o recebimento de crédito para
+                                        aquisição de um bem ou de um serviço (ou conjunto de bens ou de serviços), de
+                                        acordo com a modalidade de consórcio subscrito.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#pq3">
+                                        O que é um consorciado ativo?
+                                    </button>
+                                </h2>
+                                <div id="pq3" class="accordion-collapse collapse" data-bs-parent="#accFreq">
+                                    <div class="accordion-body text-muted">
+                                        É o consorciado que mantém obrigações para com o grupo, inclusive aquele que
+                                        antecipou todas as prestações, mas ainda não foi contemplado.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#pq4">
+                                        O que é um consorciado excluído?
+                                    </button>
+                                </h2>
+                                <div id="pq4" class="accordion-collapse collapse" data-bs-parent="#accFreq">
+                                    <div class="accordion-body text-muted">
+                                        É o consorciado não contemplado que solicita formalmente o seu afastamento do
+                                        grupo ou que, por deixar de pagar duas ou mais prestações consecutivas ou
+                                        alternadas ou ainda de montante equivalente, tem a sua cota cancelada pela
+                                        Administradora, independentemente de notificação judicial ou extrajudicial.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#pq5">
+                                        O que é um consorciado?
+                                    </button>
+                                </h2>
+                                <div id="pq5" class="accordion-collapse collapse" data-bs-parent="#accFreq">
+                                    <div class="accordion-body text-muted">
+                                        É aquele que subscreveu uma cota e efetivamente participa de um grupo
+                                        constituído.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#pq6">
+                                        O que é uma cota?
+                                    </button>
+                                </h2>
+                                <div id="pq6" class="accordion-collapse collapse" data-bs-parent="#accFreq">
+                                    <div class="accordion-body text-muted">
+                                        Cota é o número da identificação com o qual o consorciado participa no seu grupo
+                                        e concorre aos sorteios nas assembleias mensais.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#pq7">
+                                        Posso mudar meu bem objeto durante o plano?
+                                    </button>
+                                </h2>
+                                <div id="pq7" class="accordion-collapse collapse" data-bs-parent="#accFreq">
+                                    <div class="accordion-body text-muted">
+                                        Sim, em uma única oportunidade, após ter pago 20% do plano. Neste caso, o novo
+                                        bem escolhido deverá fazer parte da composição do grupo e o seu valor deverá
+                                        estar dentro dos limites do grupo.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#pq8">
+                                        Posso transferir minha cota?
+                                    </button>
+                                </h2>
+                                <div id="pq8" class="accordion-collapse collapse" data-bs-parent="#accFreq">
+                                    <div class="accordion-body text-muted">
+                                        Sim. O consorciado poderá a qualquer tempo transferir a cota a terceiro,
+                                        mediante a prévia anuência expressa da Administradora e, em caso de cota
+                                        contemplada, mediante a análise e aprovação da situação creditícia do
+                                        pretendente cessionário e das garantias exigidas.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="assembleia" class="mb-5 scroll-margin">
+                        <h3 class="fw-bold mb-3 border-bottom pb-2" style="color: var(--cecotti-orange);">Assembleia e
+                            Contemplação</h3>
+                        <div class="accordion custom-accordion" id="accAssembleia">
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#pAss1">
+                                        Assembleia e Contemplação
+                                    </button>
+                                </h2>
+                                <div id="pAss1" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accAssembleia">
+                                    <div class="accordion-body text-muted">
+                                        <p>Mensalmente, é realizada uma <strong>Assembleia</strong> do consórcio. Ou
+                                            seja, o momento em que se definem os participantes selecionados para as
+                                            contemplações do mês.</p>
+                                        <p>A <strong>Contemplação</strong>, confirmada após observados os critérios
+                                            estabelecidos em regulamento e contrato, dará direito ao participante a
+                                            receber o valor do crédito subscrito na cota para adquirir o bem objetivado.
+                                        </p>
+                                        <p>A seleção dos participantes para as contemplações mensais é feita através de
+                                            dois critérios, devidamente definidos no regulamento e contrato:
+                                            <strong>Sorteio</strong>, ou oferta de <strong>Lance</strong> proposto pelo
+                                            participante.</p>
+                                        <p>A pontualidade de pagamento das parcelas mensais, até a data do vencimento, é
+                                            condição básica para a participação em cada uma das assembleias.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="infos" class="mb-5 scroll-margin">
+                        <h3 class="fw-bold mb-3 border-bottom pb-2" style="color: var(--cecotti-orange);">Informações
+                            Gerais</h3>
+                        <div class="accordion custom-accordion" id="accInfos">
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#pi1">
+                                        Assembleia
+                                    </button>
+                                </h2>
+                                <div id="pi1" class="accordion-collapse collapse show" data-bs-parent="#accInfos">
+                                    <div class="accordion-body text-muted">
+                                        <p>Mensalmente, é realizada uma <strong>Assembleia</strong> do consórcio. Ou
+                                            seja, o momento em que se definem os participantes selecionados para as
+                                            contemplações do mês.</p>
+                                        <p>As Assembleias do Consórcio Canopus refletem a ética e transparência das
+                                            Empresas Canopus. São realizadas em local público e transmitidas ao vivo, em
+                                            tempo real, pela internet, permitindo o pleno acompanhamento por parte dos
+                                            clientes. Além disso, são mantidas em arquivo digital disponível para todos
+                                            os interessados no site institucional Consórcio Canopus e no site de
+                                            compartilhamentos do YouTube.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#pi2">
+                                        Consórcio
+                                    </button>
+                                </h2>
+                                <div id="pi2" class="accordion-collapse collapse" data-bs-parent="#accInfos">
+                                    <div class="accordion-body text-muted">
+                                        <p>Consórcio é uma forma de poupança por meio de autofinanciamento. No
+                                            Consórcio, grupos de pessoas se unem com um objetivo em comum: adquirir bens
+                                            móveis (como automóveis, caminhões, motocicletas, aeronaves, entre outros),
+                                            imóveis ou serviços ou conjunto de serviços (viagens, tratamentos
+                                            cirúrgicos, festas comemorativas, entre outros).</p>
+                                        <p>O sistema brasileiro de consórcios pode ser utilizado por pessoas acima de 18
+                                            anos de idade e se constitui em uma opção sem comparativos em relação a
+                                            todas as demais modalidades de financiamento disponíveis no mercado.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#pi3">
+                                        Contemplação
+                                    </button>
+                                </h2>
+                                <div id="pi3" class="accordion-collapse collapse" data-bs-parent="#accInfos">
+                                    <div class="accordion-body text-muted">
+                                        <p>A contemplação por Sorteio ou Lance dá ao consorciado ativo o direito à
+                                            utilização do crédito, após a análise e aprovação das garantias exigidas.
+                                        </p>
+                                        <p>Optar pela compra através do Consórcio Canopus significa optar por uma compra
+                                            inteligente, programada, que pode representar economia ainda mais
+                                            expressiva. Contemplado, e de posse do valor do crédito em mão, o
+                                            consorciado adquire um bem com todas as vantagens de um negócio à vista, o
+                                            que aumenta o seu poder de compra.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#pi4">
+                                        Formação de grupo
+                                    </button>
+                                </h2>
+                                <div id="pi4" class="accordion-collapse collapse" data-bs-parent="#accInfos">
+                                    <div class="accordion-body text-muted">
+                                        Ao adquirir o consórcio, você se torna parte de um grupo de pessoas reunidas com
+                                        o objetivo comum de adquirir um bem. Quem adquire um Consórcio é chamado
+                                        Consorciado. O Consórcio Canopus oferece planos para a aquisição parcelada e
+                                        programada de automóveis, motocicletas, imóveis, caminhões e aviões. Cada
+                                        participante será identificado através de um número chamado Cota.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#pi5">
+                                        Lances
+                                    </button>
+                                </h2>
+                                <div id="pi5" class="accordion-collapse collapse" data-bs-parent="#accInfos">
+                                    <div class="accordion-body text-muted">
+                                        <p>O outro critério utilizado para definir as contemplações é o
+                                            <strong>Lance</strong> - assim chamado o adiantamento de parcelas proposto
+                                            pelos clientes interessados. A cada assembleia, os consorciados têm a
+                                            oportunidade de oferecer um adiantamento de parcelas. O consorciado que
+                                            oferecer o maior lance (sempre calculado em valor percentual do crédito
+                                            pretendido) poderá ser contemplado.</p>
+                                        <ul>
+                                            <li><strong>Lance Livre:</strong> contempla o consorciado que oferecer o
+                                                maior percentual de parcelas antecipadas.</li>
+                                            <li><strong>Lance Fixo:</strong> contempla o consorciado que formalizar a
+                                                oferta de um percentual fixo de seu crédito (que é definido em
+                                                contrato). Ocorrendo a oferta de mais de um Lance Fixo na mesma
+                                                assembleia, o selecionado para contemplação será definido pela
+                                                pedra-chave do sorteio.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#pi6">
+                                        Sorteio
+                                    </button>
+                                </h2>
+                                <div id="pi6" class="accordion-collapse collapse" data-bs-parent="#accInfos">
+                                    <div class="accordion-body text-muted">
+                                        O sorteio para definição das cotas contempladas é realizado com o uso de bolas
+                                        numeradas, alojadas em globos, que extraídas uma a uma formam um número
+                                        denominado <strong>Pedra-Chave</strong>. A pedra-chave sorteada indicará o
+                                        selecionado para contemplação por sorteio.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="parcelas" class="mb-5 scroll-margin">
+                        <h3 class="fw-bold mb-3 border-bottom pb-2" style="color: var(--cecotti-orange);">Parcelas</h3>
+                        <div class="accordion custom-accordion" id="accParcelas">
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#pp1">
+                                        Como efetuo o pagamento das parcelas?
+                                    </button>
+                                </h2>
+                                <div id="pp1" class="accordion-collapse collapse show" data-bs-parent="#accParcelas">
+                                    <div class="accordion-body text-muted">
+                                        <p>Através da rede bancária credenciada utilizando o boleto enviado mensalmente
+                                            pela Administradora. Este boleto também pode ser emitido através:</p>
+                                        <ul>
+                                            <li>Do site www.consorciocanopus.com.br;</li>
+                                            <li>Do Serviço de Atendimento ao Consorciado (65) 2123-6000;</li>
+                                            <li>Dos Representantes Canopus;</li>
+                                            <li>Do APP Canopus disponível para os clientes através das lojas (Android e
+                                                IOS).</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="vantagens" class="mb-5 scroll-margin">
+                        <h3 class="fw-bold mb-3 border-bottom pb-2" style="color: var(--cecotti-orange);">Vantagens de
+                            Aquisição</h3>
+                        <div class="accordion custom-accordion" id="accVantagens">
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#pv1">
+                                        Compra programada
+                                    </button>
+                                </h2>
+                                <div id="pv1" class="accordion-collapse collapse show" data-bs-parent="#accVantagens">
+                                    <div class="accordion-body text-muted">
+                                        Nossa economia está mais acirrada e o dinheiro mais escasso, assim cada vez mais
+                                        é importante o planejamento, seja para renovação de frota ou na compra da sua
+                                        casa própria, seja na troca do seu automóvel ou aumento do seu patrimônio, e o
+                                        Consórcio é a ferramenta que proporciona essa programação de forma inteligente e
+                                        econômica.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#pv2">
+                                        Disciplina de poupar
+                                    </button>
+                                </h2>
+                                <div id="pv2" class="accordion-collapse collapse" data-bs-parent="#accVantagens">
+                                    <div class="accordion-body text-muted">
+                                        Algumas pessoas não têm disciplina para economizar todo mês; com o Consórcio o
+                                        cliente faz uma poupança programada.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#pv3">
+                                        Do tamanho do seu bolso
+                                    </button>
+                                </h2>
+                                <div id="pv3" class="accordion-collapse collapse" data-bs-parent="#accVantagens">
+                                    <div class="accordion-body text-muted">
+                                        Algumas pessoas não têm disciplina para economizar todo mês; com o Consórcio o
+                                        cliente faz uma poupança programada.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#pv4">
+                                        Liberdade de compra
+                                    </button>
+                                </h2>
+                                <div id="pv4" class="accordion-collapse collapse" data-bs-parent="#accVantagens">
+                                    <div class="accordion-body text-muted">
+                                        Com a carta de crédito, o consorciado pode escolher entre um veículo novo ou
+                                        seminovo, na concessionária que preferir ou diretamente de um particular (pessoa
+                                        física), com a liberdade de negociar melhor o valor, comprando "à vista".
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#pv5">
+                                        Melhor custo final
+                                    </button>
+                                </h2>
+                                <div id="pv5" class="accordion-collapse collapse" data-bs-parent="#accVantagens">
+                                    <div class="accordion-body text-muted">
+                                        No sistema de Consórcio não há cobrança de juros, há apenas a taxa de
+                                        administração que é diluída no decorrer do plano, por isso é a modalidade de
+                                        compra mais econômica.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#pv6">
+                                        Menos burocracia
+                                    </button>
+                                </h2>
+                                <div id="pv6" class="accordion-collapse collapse" data-bs-parent="#accVantagens">
+                                    <div class="accordion-body text-muted">
+                                        Para aquisição do bem após contemplação, é necessária a aprovação do crédito do
+                                        consorciado como qualquer forma de compra, porém no Consórcio é mais fácil pois
+                                        é considerado o histórico de pagamento do consorciado.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item shadow-sm mb-2 border-0 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#pv7">
+                                        Saia do aluguel
+                                    </button>
+                                </h2>
+                                <div id="pv7" class="accordion-collapse collapse" data-bs-parent="#accVantagens">
+                                    <div class="accordion-body text-muted">
+                                        No Consórcio de Imóvel o cliente pode antecipar a sua contemplação ofertando
+                                        lance com o seu FGTS.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0 small">&copy; <span id="anoAtual"></span> Cecotti Consórcio & Empreendimentos.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>

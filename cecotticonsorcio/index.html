@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cecotti Consórcio</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/609/609803.png" type="image/png">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <meta name="description"
+    content="Cecotti Consórcio - Agente autorizado Canopus. Simule e contrate consórcios de imóveis, carros e serviços com as melhores taxas.">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark sticky-top shadow-sm" style="background-color: var(--cor-primaria); padding: 15px 0;">
+    <div class="container">
+
+      <a class="navbar-brand fw-bold fs-4 text-white" href="index.html">
+        <i class="fa-solid fa-house-chimney text-cecotti-orange"></i>
+        <span class="text-cecotti-orange">Cecotti</span> Consórcio
+      </a>
+
+      <div class="d-flex align-items-center">
+
+        <a href="#parceiro" class="btn btn-cecotti me-3 d-none d-sm-block fw-bold shadow-sm border-white">
+          Seja um Parceiro
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral"
+          aria-controls="menuLateral">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel">
+
+        <div class="offcanvas-header" style="background-color: var(--cor-primaria);">
+          <h5 class="offcanvas-title fw-bold text-white" id="menuLateralLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item border-bottom">
+              <a class="nav-link fs-5" href="sobre.html">A Empresa</a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a class="nav-link fs-5" href="index.html#servicos">Consórcios</a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a class="nav-link fs-5" href="index.html#simulador">Simular</a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a class="nav-link fs-5" href="faq.html">Dúvidas Frequentes</a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a class="nav-link fs-5" href="index.html#contato">Contato</a>
+            </li>
+
+            <li class="nav-item mt-4 d-sm-none">
+              <a class="btn btn-cecotti w-100" href="#parceiro">Seja um Parceiro</a>
+            </li>
+          </ul>
+
+          <div class="mt-4 pt-2 text-center">
+            <p class="text-muted small mb-2">Precisa de ajuda?</p>
+            <a href="https://wa.me/5517991363607" class="btn btn-outline-success w-100 fw-bold">
+              <i class="fab fa-whatsapp me-2"></i> Falar no WhatsApp
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <header class="hero d-flex align-items-center text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h5 class="text-cecotti-orange text-uppercase fw-bold mb-3">Agente Autorizado Consórcio Canopus</h5>
+          <h1 class="display-4 fw-bold mb-4">Realize seus sonhos com planejamento e segurança</h1>
+          <p class="lead mb-4">Ajudamos você a conquistar sua casa, veículo ou serviço com as melhores taxas do mercado.
+          </p>
+          <a href="#simulador" class="btn btn-cecotti btn-lg">Simular Agora <i class="fas fa-arrow-right ms-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="sobre" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img
+            src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+            alt="Equipe Cecotti" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+          <h6 class="text-cecotti-orange fw-bold">QUEM SOMOS</h6>
+          <h2 class="fw-bold mb-4" style="color: var(--cor-primaria);">Cecotti Consórcio & Empreendimentos Imobiliários
+          </h2>
+          <p>Somos Agentes Autorizados do <strong>Consórcio Canopus</strong>, trazendo segurança e credibilidade para o
+            seu investimento.</p>
+          <p>Localizados em São José do Rio Preto-SP, nossa missão é facilitar a conquista do seu patrimônio através de
+            um planejamento financeiro inteligente.</p>
+          <a href="sobre.html" class="btn btn-cecotti mt-3">Saiba Mais Sobre Nossa História</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+
+          <h6 class="text-cecotti-orange fw-bold text-uppercase mb-2">SEGURANÇA E SOLIDEZ</h6>
+          <h2 class="fw-bold mb-4">Quem garante o seu investimento?</h2>
+          <p class="mb-4 text-white-50">
+            A Cecotti é Agente Autorizado do <strong>Consórcio Canopus</strong>, uma das maiores administradoras do
+            Brasil.
+            Assista ao vídeo e entenda a força dessa parceria.
+          </p>
+
+          <div class="ratio ratio-16x9 shadow-lg rounded border border-secondary">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mbLOy20pYHo?si=ZUKLz1Gm-JxkB5Jt"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="comparativo-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <h2 class="fw-bold mb-4 display-5">Pagar juros ou investir no seu bem?</h2>
+          <p class="lead mb-4">
+            O consórcio permite que você conquiste seu bem de forma planejada e mais econômica,
+            sem a cobrança de juros abusivos.
+          </p>
+          <a href="#contato" class="btn btn-custom-orange btn-lg px-4 py-2">SIMULAR AGORA</a>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="comparativo-box shadow-sm">
+            <div class="d-flex text-center fw-bold text-white">
+              <div class="w-50 py-3 bg-secondary-custom rounded-top-left">
+                FINANCIAMENTO
+              </div>
+              <div class="w-50 py-3 bg-custom-green rounded-top-right">
+                CONSÓRCIO
+              </div>
+            </div>
+
+            <div class="comparativo-body bg-white p-3">
+
+              <div class="row py-3 border-bottom align-items-center">
+                <div class="col-6 border-end">
+                  <div class="comparativo-item text-muted">
+                    <span>Cobra juros altos (até 27% a.a.)</span>
+                    <i class="bi bi-x-circle-fill text-danger"></i>
+                  </div>
+                </div>
+                <div class="col-6 fw-bold">
+                  <div class="comparativo-item">
+                    <span>Apenas taxa administrativa</span>
+                    <i class="bi bi-check-circle-fill text-success ps-2"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row py-3 border-bottom align-items-center">
+                <div class="col-6 border-end">
+                  <div class="comparativo-item text-muted">
+                    <span>Entrada obrigatória</span>
+                    <i class="bi bi-x-circle-fill text-danger"></i>
+                  </div>
+                </div>
+                <div class="col-6 fw-bold">
+                  <div class="comparativo-item">
+                    <span>Não exige entrada</span>
+                    <i class="bi bi-check-circle-fill text-success ps-2"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row py-3 border-bottom align-items-center">
+                <div class="col-6 border-end">
+                  <div class="comparativo-item text-muted">
+                    <span>Parcelas mais caras</span>
+                    <i class="bi bi-x-circle-fill text-danger"></i>
+                  </div>
+                </div>
+                <div class="col-6 fw-bold">
+                  <div class="comparativo-item">
+                    <span>Parcelas acessíveis</span>
+                    <i class="bi bi-check-circle-fill text-success ps-2"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row py-3 align-items-center">
+                <div class="col-6 border-end">
+                  <div class="comparativo-item text-muted">
+                    <span>É uma dívida ativa</span>
+                    <i class="bi bi-x-circle-fill text-danger"></i>
+                  </div>
+                </div>
+                <div class="col-6 fw-bold">
+                  <div class="comparativo-item">
+                    <span>É um investimento</span>
+                    <i class="bi bi-check-circle-fill text-success ps-2"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h6 class="text-cecotti-orange fw-bold">NOSSAS SOLUÇÕES</h6>
+        <h2 class="fw-bold" style="color: var(--cor-primaria);">O que você deseja conquistar?</h2>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card service-card p-4 text-center" onclick="selecionarBem('imovel')"
+            style="background-image: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=600');">
+            <div class="icon-box"><i class="fas fa-home"></i></div>
+            <h4>Imóveis</h4>
+            <p>Casa nova, reforma ou terreno.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card service-card p-4 text-center" onclick="selecionarBem('auto')"
+            style="background-image: url('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=600');">
+            <div class="icon-box"><i class="fas fa-car"></i></div>
+            <h4>Automóveis</h4>
+            <p>Troque de carro com facilidade.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card service-card p-4 text-center" onclick="selecionarBem('moto')"
+            style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80&w=600');">
+            <div class="icon-box"><i class="fas fa-motorcycle"></i></div>
+            <h4>Motos</h4>
+            <p>Liberdade sobre duas rodas.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card service-card p-4 text-center" onclick="selecionarBem('caminhao')"
+            style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=600');">
+            <div class="icon-box"><i class="fas fa-truck"></i></div>
+            <h4>Caminhões</h4>
+            <p>Renove sua frota de pesados.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card service-card p-4 text-center" onclick="selecionarBem('aviao')"
+            style="background-image: url('https://images.unsplash.com/photo-1540962351504-03099e0a754b?auto=format&fit=crop&q=80&w=600');">
+            <div class="icon-box"><i class="fas fa-plane"></i></div>
+            <h4>Aviões</h4>
+            <p>Aeronaves e helicópteros.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card service-card p-4 text-center" onclick="selecionarBem('servico')"
+            style="background-image: url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=600');">
+            <div class="icon-box"><i class="fas fa-tools"></i></div>
+            <h4>Serviços</h4>
+            <p>Cirurgias, festas e viagens.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="simulador" class="py-5 bg-cecotti-green">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="simulacao-box">
+            <h3 class="text-center fw-bold mb-4" style="color: var(--cor-primaria);">Simule seu Consórcio</h3>
+            <form id="simuladorForm">
+              <div class="row">
+                <div class="col-md-12 mb-3">
+                  <label class="form-label fw-bold">Tipo de Bem</label>
+                  <select class="form-select" id="tipoBem">
+                    <option value="imovel">Imóvel</option>
+                    <option value="auto">Automóvel</option>
+                    <option value="moto">Moto</option>
+                    <option value="caminhao">Caminhão</option>
+                    <option value="aviao">Avião</option>
+                    <option value="servico">Serviços</option>
+                  </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="form-label fw-bold">Valor do Crédito (R$)</label>
+                  <input type="text" class="form-control" id="valorCredito" placeholder="R$ 0,00" required
+                    inputmode="numeric" onkeyup="formatarMoeda(this)">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="form-label fw-bold">Número de Parcelas</label>
+                  <input type="number" class="form-control" id="numParcelas" placeholder="Ex: 60" required>
+                </div>
+              </div>
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-cecotti btn-lg">Calcular Parcela Estimada</button>
+              </div>
+            </form>
+            <div id="resultadoSimulacao" class="result-box text-center">
+              <h5 class="text-muted">Valor Estimado da Parcela:</h5>
+              <h2 class="fw-bold text-cecotti-orange" id="valorParcela">R$ 0,00</h2>
+              <p class="small text-muted mt-2">*Este valor é uma estimativa. Fale com um vendedor para o valor exato.
+              </p>
+              <a href="#contato" class="btn btn-outline-success btn-sm mt-2">Falar com Consultor</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold" style="color: var(--cor-primaria);">Perguntas Frequentes</h2>
+        <div class="section-title-underline"></div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-5 text-center mb-4 mb-lg-0">
+          <img src="img/duvida.png" alt="Dúvidas Frequentes" class="img-fluid" style="max-height: 400px;">
+        </div>
+
+        <div class="col-lg-7">
+          <div class="accordion" id="faqAccordionHome">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#faq1">O que é grupo de consórcio?</button></h2>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordionHome">
+                <div class="accordion-body">Grupo de consórcio é a união de participantes com o objetivo de possibilitar
+                  a cada um, através da contribuição de todos, o recebimento de crédito para aquisição de um bem ou de
+                  um serviço (ou conjunto de bens ou de serviços), de acordo com a modalidade de consórcio subscrito.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#faq2">O que é uma cota?</button></h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordionHome">
+                <div class="accordion-body">Cota é o número da identificação com o qual o consorciado participa no seu
+                  grupo e concorre aos sorteios nas assembleias mensais.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#faq3">O que é um consorciado?</button></h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordionHome">
+                <div class="accordion-body">É aquele que subscreveu uma cota e efetivamente participa de um grupo
+                  constituído.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#faq4">O que é um consorciado Ativo?</button></h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordionHome">
+                <div class="accordion-body">É o consorciado que mantém obrigações para com o grupo, inclusive aquele que
+                  antecipou todas as prestações, mas ainda não foi contemplado.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#faq5">O que é um consorciado excluído?</button></h2>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordionHome">
+                <div class="accordion-body">É o consorciado não contemplado que solicita formalmente o seu afastamento
+                  do grupo ou que, por deixar de pagar duas ou mais prestações consecutivas ou alternadas ou ainda de
+                  montante equivalente, tem a sua cota cancelada pela Administradora, independentemente de notificação
+                  judicial ou extrajudicial.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#faq6">O que é fundo comum?</button></h2>
+              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordionHome">
+                <div class="accordion-body">São os recursos do grupo destinados à atribuição de crédito aos consorciados
+                  contemplados para aquisição do bem e à restituição dos valores a que tem direito os consorciados
+                  excluídos dos respectivos grupos.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#faq7">Posso mudar meu bem objeto durante o plano?</button>
+              </h2>
+              <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordionHome">
+                <div class="accordion-body">Sim, em uma única oportunidade, após ter pago 20% do plano. Neste caso, o
+                  novo bem escolhido deverá fazer parte da composição do grupo e o seu valor deverá estar dentro dos
+                  limites do grupo.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#faq8">Posso transferir minha cota?</button></h2>
+              <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordionHome">
+                <div class="accordion-body">Sim. O CONSORCIADO poderá a qualquer tempo transferir a cota à terceiro,
+                  mediante a prévia anuência expressa da ADMINISTRADORA e, em caso de cota contemplada, mediante a
+                  análise e aprovação da situação creditícia do pretendente cessionário e das garantias exigidas.</div>
+              </div>
+            </div>
+
+            <div class="text-end mt-3">
+              <a href="faq.html" class="text-cecotti-orange fw-bold text-decoration-none">Ver todas as dúvidas <i
+                  class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="parceiro" class="py-5 bg-light">
+    <div class="container position-relative">
+
+      <div class="text-center mb-5">
+        <h6 class="text-cecotti-orange fw-bold text-uppercase">EXPANDA SEUS NEGÓCIOS</h6>
+        <h2 class="fw-bold" style="color: var(--cor-primaria);">Vantagens de ser um Parceiro</h2>
+        <div class="section-title-underline"></div>
+      </div>
+
+      <button class="scroll-btn prev-btn" onclick="rolarCarrossel('esquerda')">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="scroll-btn next-btn" onclick="rolarCarrossel('direita')">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <div class="parceiro-scroll-container" id="containerParceiros">
+
+        <div class="parceiro-card">
+          <div class="card-img-top"
+            style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400');">
+          </div>
+          <div class="card-body p-4">
+            <h5 class="fw-bold mb-3">Ferramentas On-line</h5>
+            <p class="text-muted small">O parceiro Cecotti conta com tabelas de preços atualizadas e com Simulador de
+              Vendas exclusivo.</p>
+          </div>
+        </div>
+
+        <div class="parceiro-card">
+          <div class="card-img-top"
+            style="background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=400');">
+          </div>
+          <div class="card-body p-4">
+            <h5 class="fw-bold mb-3">Programa de Relacionamento</h5>
+            <p class="text-muted small">O parceiro conta com o programa de relacionamento Universo Canopus, criado para
+              recompensar você financeiramente.</p>
+          </div>
+        </div>
+
+        <div class="parceiro-card">
+          <div class="card-img-top"
+            style="background-image: url('https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80&w=400');">
+          </div>
+          <div class="card-body p-4">
+            <h5 class="fw-bold mb-3">Comissionamento Justo</h5>
+            <p class="text-muted small">A condição de parceria que colocamos à sua disposição vai lhe render até 30% de
+              comissão.</p>
+          </div>
+        </div>
+
+        <div class="parceiro-card">
+          <div class="card-img-top"
+            style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=400');">
+          </div>
+          <div class="card-body p-4">
+            <h5 class="fw-bold mb-3">Automação das vendas</h5>
+            <p class="text-muted small">Processo de vendas automatizado: você faz a venda de qualquer lugar do Brasil e
+              do Mundo.</p>
+          </div>
+        </div>
+
+        <div class="parceiro-card">
+          <div class="card-img-top"
+            style="background-image: url('https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&q=80&w=400');">
+          </div>
+          <div class="card-body p-4">
+            <h5 class="fw-bold mb-3">Assembleias On-line</h5>
+            <p class="text-muted small">Para maior comodidade dos clientes e parceiros, as Assembleias são realizadas ao
+              vivo.</p>
+          </div>
+        </div>
+
+        <div class="parceiro-card">
+          <div class="card-img-top"
+            style="background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=400');">
+          </div>
+          <div class="card-body p-4">
+            <h5 class="fw-bold mb-3">Mentoria Especializada</h5>
+            <p class="text-muted small">Acesso a uma rede de profissionais altamente qualificados e com vasta
+              experiência em consórcios.</p>
+          </div>
+        </div>
+
+        <div class="parceiro-card">
+          <div class="card-img-top"
+            style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=400');">
+          </div>
+          <div class="card-body p-4">
+            <h5 class="fw-bold mb-3">Treinamento Completo</h5>
+            <p class="text-muted small">Treinamentos on-line e presenciais, além do acompanhamento diário do processo de
+              adaptação.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="https://wa.me/5517991363607?text=Olá,%20vi%20as%20vantagens%20no%20site%20e%20quero%20ser%20um%20parceiro%20Cecotti."
+          class="btn btn-cecotti btn-lg px-5 shadow ">Quero ser Parceiro</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contato" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h6 class="text-cecotti-orange fw-bold">CONTATO</h6>
+          <h2 class="fw-bold mb-4" style="color: var(--cor-primaria);">Fale com a gente</h2>
+          <div class="mt-4">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-map-marker-alt fa-lg text-cecotti-orange me-3" style="width: 20px;"></i>
+              <span>Rua Antônio de Godoy, 4878<br>Bairro Nova Redentora - São José do Rio Preto/SP</span>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-phone fa-lg text-cecotti-orange me-3" style="width: 20px;"></i>
+              <span>(17) 99136-3607</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="fas fa-envelope fa-lg text-cecotti-orange me-3" style="width: 20px;"></i>
+              <span>contato@cecotticonsorcio.com.br</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card border-0 shadow-sm h-100 bg-light text-center p-5">
+            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+
+              <div class="mb-4 rounded-circle bg-white d-flex align-items-center justify-content-center shadow-sm"
+                style="width: 80px; height: 80px;">
+                <i class="fab fa-whatsapp fa-3x text-success"></i>
+              </div>
+
+              <h3 class="fw-bold mb-3" style="color: var(--cor-primaria);">Atendimento Online</h3>
+              <p class="text-muted mb-4">
+                Quer agilidade? Fale agora com um de nossos consultores especialistas e faça sua simulação personalizada
+                em tempo real.
+              </p>
+
+              <a href="https://wa.me/5517991363607?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20consórcio."
+                class="btn btn-whatsapp-card w-100 py-3 fw-bold shadow-sm" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp me-2"></i> INICIAR CONVERSA AGORA
+              </a>
+
+              <div class="mt-3 text-success small fw-bold">
+                <i class="fas fa-circle fa-xs me-1 blink"></i> Consultores online agora
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container text-center">
+      <h4 class="fw-bold mb-3 text-cecotti-orange">Cecotti Consórcio</h4>
+      <p>Agente Autorizado Consórcio Canopus</p>
+      <div class="mt-4">
+        <a href="#" class="mx-2"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="#" class="mx-2"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="mx-2"><i class="fab fa-whatsapp fa-lg"></i></a>
+      </div>
+      <hr class="my-4 bg-secondary-custom">
+
+
+      <p class="mb-0 small">&copy; <span id="anoAtual"></span> Cecotti Consórcio.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5517991363607" class="float-wa" target="_blank" rel="noopener noreferrer"><i
+      class="fab fa-whatsapp"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
